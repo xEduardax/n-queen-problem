@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>N queen Problem</title>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+	<script defer src="script.js" ></script>
+</head>
+<body>
+	<h1>N Queen Problem</h1>
+	<div id="tabuleiro" onclick="addpeca()" onclick="removpeca()"></div>
+	<div id="info">
+		<fieldset>
+			<legend>Options</legend>
+			<div id="options">
+				<ul id="lista">
+					<li>Casa selecionada: <span id="info_casa_selecionada"></li>
+						<li>Peca selecionada: <span id="info_peca_selecionada"></li>
+					<li>
+						Board size: <input type="number" name="fnun" id="tamanho" min="4" max="8" onclick="tamanho()">
+					</li>
+					<li><input type="button" value="solve" onclick="solve()"></li>
+					<li><button id="reset-btn">Reiniciar</button>
+				</ul>
+			</div>
+		</fieldset>   
+	</div>  
+</body>
+</html>
